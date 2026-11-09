@@ -13,5 +13,19 @@ Developers across Latin America need native agentic integrations for local tools
 ## 🛠️ Quick Start (Claude Desktop)
 
 1. Install dependencies:
-```bash
-pip install -r requirements.txt
+`pip install -r requirements.txt`
+
+2. Add to your `claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "latam-connectors": {
+      "command": "python",
+      "args": ["/path/to/mcp-latam-connectors/server.py"]
+    }
+  }
+}
+```
+
+## 🤝 Contributing
+Pull Requests adding new regional API tools, prompt templates, or bug fixes are welcome! Check `COMMUNITY_TOOLS.md` to submit a quick PR directly from your browser.
